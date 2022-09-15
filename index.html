@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="bai-tap-JS-buoi5">
+      <div class="container py-5">
+        <h1 class="text-center mb-5 text-white bg-danger">BÀI TẬP JS BUỔI 6</h1>
+        <ul
+          class="nav nav-pills mb-3 d-flex justify-content-center"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              id="pills-bai1-tab"
+              data-toggle="pill"
+              href="#pills-bai1"
+              role="tab"
+              aria-controls="pills-bai1"
+              aria-selected="true"
+              >Bài 1</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="pills-bai2-tab"
+              data-toggle="pill"
+              href="#pills-bai2"
+              role="tab"
+              aria-controls="pills-bai2"
+              aria-selected="false"
+              >Bài 2</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="pills-bai3-tab"
+              data-toggle="pill"
+              href="#pills-bai3"
+              role="tab"
+              aria-controls="pills-bai3"
+              aria-selected="false"
+              >Bài 3</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="pills-bai4-tab"
+              data-toggle="pill"
+              href="#pills-bai4"
+              role="tab"
+              aria-controls="pills-bai4"
+              aria-selected="false"
+              >Bài 4</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-bai1"
+            role="tabpanel"
+            aria-labelledby="pills-bai1-tab"
+          >
+            <div class="bai1">
+              <p class="text-warning display-4">
+                <i class="fa fa-sort-numeric-down"></i>
+                Tìm số nguyên dương nhỏ nhất
+              </p>
+
+              <button id="btn-ket-qua" class="btn btn-warning mt-5">
+                Xem kết quả
+              </button>
+
+              <p class="text-primary mt-5 alert alert-primary" id="ket-qua"></p>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-bai2"
+            role="tabpanel"
+            aria-labelledby="pills-bai2-tab"
+          >
+            <div class="bai2">
+              <p class="text-warning display-4">
+                <i class="fa fa-calculator"></i>
+                Tính tổng
+              </p>
+
+              <div class="bai2__content d-flex">
+                <div class="form-group">
+                  <label for=""></label>
+                  <input
+                    type="number"
+                    name=""
+                    id="so-x"
+                    class="form-control w-100"
+                    placeholder="Nhập số x"
+                    aria-describedby="helpId"
+                  />
+                </div>
+                <div class="form-group ml-5">
+                  <label for=""></label>
+                  <input
+                    type="number"
+                    name=""
+                    id="so-n"
+                    class="form-control w-100"
+                    placeholder="Nhập số n"
+                    aria-describedby="helpId"
+                  />
+                </div>
+              </div>
+
+              <button id="btn-tinh-tong" class="btn btn-warning mt-5">
+                Tính tổng
+              </button>
+
+              <p class="text-primary mt-5 alert alert-primary" id="tinh-tong"></p>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-bai3"
+            role="tabpanel"
+            aria-labelledby="pills-bai3-tab"
+          >
+            <div class="bai3">
+              <p class="text-warning display-4">
+                <i class="fa fa-calculator"></i>
+                Tính giai thừa
+              </p>
+
+              <div class="bai3__content">
+                <div class="form-group">
+                  <label for=""></label>
+                  <input
+                    type="number"
+                    name=""
+                    id="txt-so-n"
+                    class="form-control w-25"
+                    placeholder="Nhập số n"
+                    aria-describedby="helpId"
+                  />
+                </div>
+              </div>
+
+              <button id="btn-tinh-gt" class="btn btn-warning mt-5">
+                Tính 
+              </button>
+
+              <p class="text-primary mt-5 alert alert-primary" id="tinh-gt"></p>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-bai4"
+            role="tabpanel"
+            aria-labelledby="pills-bai4-tab"
+          >
+            <div class="bai4">
+              <p class="text-warning display-4">
+                <i class="fa fa-calculator"></i>
+                Tạo thẻ div
+              </p>
+
+              <button id="btn-tao-the" class="btn btn-warning mt-5">
+                Tạo thẻ
+              </button>
+
+              <p class="text-primary mt-5" id="tao-the"></p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+    <script src="./index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
